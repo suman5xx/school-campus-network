@@ -1,14 +1,14 @@
 # school-campus-network
 School campus network design using Cisco Packet Tracer with VLANs, DHCP, DNS, ACLs, STP, and Port Security.
-# 🏫 School Campus Network Design — Cisco Packet Tracer
+# School Campus Network Design — Cisco Packet Tracer
 
-## 📌 Project Overview
+##  Project Overview
 
 This project demonstrates the design and configuration of a school campus network using **Cisco Packet Tracer**. The network is divided into multiple VLANs to improve network segmentation, security, and manageability.
 
 The project includes inter-VLAN routing, DHCP, DNS, Access Control Lists (ACLs), Spanning Tree Protocol (STP), redundant switch links, and switch port security.
 
-## 🎯 Project Objectives
+## Project Objectives
 
 - Design a segmented school campus network.
 - Configure VLANs for different departments.
@@ -19,7 +19,7 @@ The project includes inter-VLAN routing, DHCP, DNS, Access Control Lists (ACLs),
 - Understand STP and redundant link behavior.
 - Configure switch port security to protect access ports.
 
-## 🗺️ Network Topology
+##  Network Topology
 
 The network consists of the following devices:
 
@@ -28,24 +28,10 @@ The network consists of the following devices:
 - 8 × PCs
 - 1 × Server
 
-### Network Structure
-
-```text
-                  SCHOOL-R1
-                      |
-                 SCHOOL-SW1
-                /     |      \
-          SCHOOL-SW2 SCHOOL-SW3 SCHOOL-SW4
-             |          |        /    \
-        Administration Teachers Computer Lab
-                               Library
-
-                 Server connected to SW1
-```
 
 An additional link between SCHOOL-SW1 and SCHOOL-SW2 is used to practice redundant switching links and STP behavior.
 
-## 🏢 VLAN Configuration
+##  VLAN Configuration
 
 | VLAN ID | VLAN Name | Network Address | Default Gateway |
 |---|---|---|---|
@@ -55,7 +41,7 @@ An additional link between SCHOOL-SW1 and SCHOOL-SW2 is used to practice redunda
 | 40 | LIBRARY | 192.168.40.0/24 | 192.168.40.1 |
 | 50 | SERVER | 192.168.50.0/24 | 192.168.50.1 |
 
-## ⚙️ Technologies and Features
+##  Technologies and Features
 
 ### 1. VLAN Configuration
 Created separate VLANs for Administration, Teachers, Computer Lab, Library, and Servers.
@@ -95,7 +81,7 @@ Configured port security on Administration access ports.
 - MAC address learning: Sticky
 - Violation action: Shutdown
 
-## 🧪 Verification Commands
+##  Verification Commands
 
 Use the following commands to verify the configuration.
 
@@ -142,7 +128,7 @@ ping 192.168.10.1
 ping 192.168.50.10
 ```
 
-## 🔐 Security and Design Benefits
+##  Security and Design Benefits
 
 - Department-wise network segmentation
 - Controlled inter-VLAN communication
@@ -151,7 +137,7 @@ ping 192.168.50.10
 - Basic protection against unauthorized devices
 - Improved troubleshooting and network management
 
-## 📚 Skills Demonstrated
+##  Skills Demonstrated
 
 - Cisco IOS CLI configuration
 - VLANs and 802.1Q trunking
@@ -162,7 +148,7 @@ ping 192.168.50.10
 - Port Security
 - Network troubleshooting and connectivity testing
 
-## 🚀 Future Improvements
+##  Future Improvements
 
 - Configure DHCP Snooping and Dynamic ARP Inspection.
 - Implement Rapid Spanning Tree Protocol (RSTP).
@@ -171,11 +157,11 @@ ping 192.168.50.10
 - Document successful connectivity and failover test results.
 - Improve ACL rules to enforce the school's security policy.
 
-## 🛠️ Software Used
+##  Software Used
 
 - Cisco Packet Tracer
 
-## 👨‍💻 Author
+##  Author
 
 **Suman Talukdar**
 
